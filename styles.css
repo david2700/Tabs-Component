@@ -1,0 +1,94 @@
+/* Reset default styles and set up basic page layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Style the navigation bar */
+.tab-nav {
+    background-color: #333;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Style the tab list to display horizontally */
+.tab-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Style the tab buttons */
+.tab-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+/* Style for hover state of tab buttons */
+.tab-btn:hover {
+    background-color: #555;
+}
+
+/* Style for active tab button */
+.tab-btn.active {
+    background-color: #4c72af;
+}
+
+/* Style the content container */
+.content-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Style individual tab content sections */
+.tab-content {
+    display: none; /* Hide all tab content by default */
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Show active tab content */
+.tab-content.active {
+    display: block;
+}
+
+/* Add some spacing to content elements */
+.tab-content h1 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.tab-content p {
+    color: #666;
+}
+
+@media (max-width: 678px) {
+    .content-container {
+        max-width: none;
+    }
+
+    .tab-list {
+        gap: 0.1rem;
+    }
+    
+    .tab-nav {
+        padding: 0.6rem;
+    }
+}

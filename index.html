@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A dynamic tabbed interface component with smooth transitions">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Dynamic Tab Interface">
+    <meta property="og:description" content="A modern and responsive tabbed navigation interface with dynamic content switching">
+    <meta property="og:url" content="URL_to_tab_interface">
+    <title>Tabs Component</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <nav class="tab-nav">
+        <ul class="tab-list">
+            <li><button class="tab-btn active" data-tab="home">Home</button></li>
+            <li><button class="tab-btn" data-tab="about">About</button></li>
+            <li><button class="tab-btn" data-tab="services">Services</button></li>
+            <li><button class="tab-btn" data-tab="contact">Contact</button></li>
+        </ul>
+    </nav>
+
+    <main class="content-container">
+        <div class="tab-content active" id="home">
+            <h1>Welcome Home</h1>
+            <p>This is the home section of our website. Feel free to explore!</p>
+        </div>
+
+        <div class="tab-content" id="about">
+            <h1>About Us</h1>
+            <p>Learn more about our company and what we do.</p>
+        </div>
+
+        <div class="tab-content" id="services">
+            <h1>Our Services</h1>
+            <p>Check out the various services we offer to our clients.</p>
+        </div>
+
+        <div class="tab-content" id="contact">
+            <h1>Contact Us</h1>
+            <p>Get in touch with us for any inquiries.</p>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
