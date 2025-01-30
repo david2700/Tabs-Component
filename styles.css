@@ -3,35 +3,48 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Nunito', Arial, sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
+    padding-top: 5rem;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: 2px solid black;
+    border-radius: 20px;
 }
 
 /* Style the navigation bar */
 .tab-nav {
-    background-color: #333;
+    background-color: transparent;
     padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: #333;
 }
 
 /* Style the tab list to display horizontally */
 .tab-list {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 1rem;
 }
 
 /* Style the tab buttons */
 .tab-btn {
     padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
     border: none;
     background: none;
-    color: #fff;
+    color: #aaa;
     cursor: pointer;
     font-size: 1rem;
     transition: all 0.3s ease;
@@ -40,12 +53,14 @@ body {
 
 /* Style for hover state of tab buttons */
 .tab-btn:hover {
-    background-color: #555;
+    background-color: #d0cece;
 }
 
 /* Style for active tab button */
 .tab-btn.active {
-    background-color: #4c72af;
+    color: #333;
+    border-bottom: 2px solid black;
+    border-radius: 0px;
 }
 
 /* Style the content container */
@@ -61,7 +76,6 @@ body {
     background-color: white;
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 /* Show active tab content */
